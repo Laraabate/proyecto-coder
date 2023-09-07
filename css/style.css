@@ -265,9 +265,51 @@ nav{
 }
 
 /*  Footer --------------------- */
+footer{
+    background-color:#65451F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+footer img, svg{
+    width: 50px;
+}
+
+.logoTelefono{
+    margin-left: 10px;
+}
+    
+
+footer div{
+   
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ footer .logoFacebook{
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+}
+footer .logoInstagram{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25%;
+}
 
 
-
+/*footer-------------------------------------*/
+footer div{
+    width: 50%;
+}
+footer p{
+    font-size: 1.5rem;
+}
 
 
 /* mediaQ */
@@ -301,24 +343,111 @@ nav{
 
 
 
-
-
-
-    /* nosotros */
+    /*nosotros-----------------------------------*/
     .contenedor-grid{
         grid-template-areas: 
         "h1"
         "texto1"
         "casa1"
-        "text2"
-        "casa3"
+        "texto2" 
+        "casa3" 
         "texto3"
-        "h2";
-        grid-template-rows: 100px 250px repeat(4,200px) 150px;
+        "h2"; 
         grid-template-columns: 100%;
+        grid-template-rows: 100px 250px repeat(4,200px) 150px;
     }
-    .grid-img-3{
-        display: none;
+    .grid-img-3 { display: none; }
+    .contenedor-grid img{
+        width: 95%;
     }
+    .grid-titulo-2, .grid-titulo-1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    footer{
+        background-color: #041562;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    footer img, svg{
+        width: 50px;
+    }
+    
+    .logoTelefono{
+        margin-left: 10px;
+    }
+     footer div{
+       
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     }
+    
+    footer .logoFacebook{
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid white;
+    }
+    footer .logoInstagram{
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 25%;
+    }
+}
+/* Contacto----------------------------------------------------------------------- */
+.mainContacto h1{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: underline;
+    color:#C8AE7D;
+}
+.mapa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+/* formulario */
+.mensaje{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    color:#C8AE7D;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.mainContacto form{
+    background-color:#65451F;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #ffffff;
+}
+input{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.boton{
+    width: 70px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    color:#65451F;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
